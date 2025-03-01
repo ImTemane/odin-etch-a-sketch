@@ -21,6 +21,5 @@ body {
 }
 
 .cube {
-  flex-basis: calc(100% / 16);
   border: 1px solid black;
 }
