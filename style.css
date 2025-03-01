@@ -1,5 +1,6 @@
 body * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,11 +15,12 @@ body {
 
 .container {
   display: flex;
-  border: 2px solid black;
-  padding: 1px;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
 }
 
 .cube {
-  height: 50px;
-  width: 50px;
+  flex-basis: calc(100% / 16);
+  border: 1px solid black;
 }
