@@ -13,7 +13,7 @@ function generateRandomColor() {
 resizeBtn.addEventListener("click", () => {
   const answer = prompt("Enter the grid size | e.g : 16x16 grid, type 16.");
   if (answer < 100 && answer > 0){
-    gridSize = answer;
+    gridSize = Math.round(answer);
     generateGrid()
   } else {
     alert("Please enter a number between 1 & 100.")
